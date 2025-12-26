@@ -5,9 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.rescuerobotcontroller"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.rescuerobotcontroller"
@@ -43,6 +41,27 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    
+    // Navigation
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
+    implementation(libs.fragment.ktx)
+    
+    // Retrofit & Gson
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    
+    // Coroutines
+    implementation(libs.coroutines.android)
+    
+    // ViewModel & Lifecycle
+    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.activity.ktx)
+    
+    // Firebase (Runtime only - no google-services plugin needed for test)
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-database-ktx")
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

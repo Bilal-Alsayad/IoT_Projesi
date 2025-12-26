@@ -1,9 +1,21 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.RescueRobotController" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Professional Dark Theme (AppCompat base for stability) -->
+    <style name="Theme.RescueRobotController" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/neon_green</item>
+        <item name="colorPrimaryDark">@color/dark_background</item>
+        <item name="colorAccent">@color/cyan_accent</item>
+        
+        <!-- Background -->
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/dark_background</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
     </style>
-
-    <style name="Theme.RescueRobotController" parent="Base.Theme.RescueRobotController" />
 </resources>
